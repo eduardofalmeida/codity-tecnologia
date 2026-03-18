@@ -11,7 +11,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Codity Tecnologia — Menos planilhas. Mais resultado.",
+  title: "Codity Tecnologia — Transformando ideias em soluções digitais.",
   description:
     "Transformamos processos manuais em sistemas e sites inteligentes. Sites, sistemas sob medida, dashboards e automação de processos.",
 };
