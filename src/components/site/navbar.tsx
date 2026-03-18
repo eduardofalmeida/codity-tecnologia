@@ -69,7 +69,18 @@ export function Navbar() {
           </nav>
 
           <div className="flex shrink-0 items-center gap-2">
-            <Button variant="secondary" asChild className="hidden text-xs sm:text-sm md:inline-flex">
+            <Button
+              asChild
+              size="sm"
+              className="h-9 shrink-0 px-3 text-xs font-semibold md:hidden"
+            >
+              <a href="#cta">Entrar em contato</a>
+            </Button>
+            <Button
+              variant="secondary"
+              asChild
+              className="hidden text-xs sm:text-sm md:inline-flex"
+            >
               <a href="#demo">Ver portfólio</a>
             </Button>
           </div>
