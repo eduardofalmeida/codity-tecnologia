@@ -103,7 +103,8 @@ export function HeroSection() {
               className="mt-6 text-4xl font-extrabold tracking-tight text-foreground sm:text-6xl"
             >
               <span className="block bg-gradient-to-r from-neon-blue via-foreground to-accent bg-clip-text text-transparent">
-                Transformamos presença digital e processos em crescimento real.
+                Sua empresa com presença digital de elite e processos
+                inteligentes.
               </span>
             </motion.h1>
 
@@ -113,9 +114,9 @@ export function HeroSection() {
               transition={{ duration: 0.75, delay: 0.12, ease: [0.21, 0.47, 0.32, 0.98] }}
               className="mt-5 max-w-xl text-lg leading-relaxed text-muted"
             >
-              Criamos sites premium para atrair clientes e transformamos planilhas e
-              processos em sistemas simples, automações e dashboards que organizam e
-              fazem seu negócio crescer.
+              Desenvolvemos sites de alta conversão para clínicas e comércios, e
+              transformamos suas planilhas complexas em softwares sob medida com
+              dashboards intuitivos.
             </motion.p>
 
             <motion.div
