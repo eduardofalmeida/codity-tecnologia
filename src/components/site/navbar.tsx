@@ -71,7 +71,6 @@ export function Navbar() {
           <div className="flex shrink-0 items-center gap-2">
             <Button
               asChild
-              size="sm"
               className="h-9 shrink-0 px-3 text-xs font-semibold md:hidden"
             >
               <a href="#cta">Entrar em contato</a>
