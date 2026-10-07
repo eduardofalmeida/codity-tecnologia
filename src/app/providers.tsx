@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect } from "react";
+import { usePathname } from "next/navigation";
 import { AnimatePresence, motion, useMotionValue, useSpring } from "framer-motion";
 import { useScroll } from "framer-motion";
 
@@ -41,7 +42,11 @@ function CustomCursor() {
 }
 
 export function Providers({ children }: { children: React.ReactNode }) {
+  const pathname = usePathname();
+  const pedidoNoCelular = pathname.startsWith("/personalizar");
+
   useEffect(() => {
+    if (pedidoNoCelular) return;
     let lenis: any;
     let raf = 0;
     let cancelled = false;
@@ -67,7 +72,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
       cancelAnimationFrame(raf);
       lenis?.destroy?.();
     };
-  }, []);
+  }, [pedidoNoCelular]);
 
   return (
     <>
