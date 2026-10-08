@@ -1,6 +1,6 @@
 import { createRequire } from "node:module";
 
-import type { Border, Borders, Fill, Workbook, Worksheet } from "exceljs";
+import type { Border, Borders, Fill, Workbook as PastaExcel, Worksheet } from "exceljs";
 
 import {
   agruparFamilias,
@@ -317,7 +317,7 @@ function escreverTabelaTamanhos(
 }
 
 function preencherQuantidades(
-  pasta: Workbook,
+  pasta: PastaExcel,
   quantidades: ReturnType<typeof resumirQuantidades>,
 ) {
   const planilha = pasta.addWorksheet("Quantidades", {
